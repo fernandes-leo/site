@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Leonardo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Sobre</a></li>
+         <!-- <li><a href="#experience">Experiência</a></li> -->
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Leo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contatos</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/leo.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bem-vindo</p>
+        <h1 class="title">Leonardo Fernandes</h1>
+        <p class="section__text__p2">Desenvolvedor iOS</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/cvleonardo.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fernandesleo/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/fernandes-leo'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Saiba mais</p>
+      <h1 class="title">Sobre Mim</h1>
+     
+     
+      <!--
+      <div class="section-container">
+        
+        <div class="section__pic-container">
+         
+         
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        -->
+
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>2+ anos <br />Desenvolvedor iOS</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Formação</h3>
+              <p>Anhembi Morumbi<br />Tecnologia da Informação</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Sou Leonardo Fernandes, desenvolvedor iOS com experiência crescente em criação e manutenção de aplicativos utilizando Swift e SwiftUI. Com foco em aprender e evoluir continuamente, já participei de projetos que envolvem a construção de interfaces intuitivas, integração de APIs RESTful e aplicação de padrões arquiteturais como MVVM, sempre buscando seguir as melhores práticas da área.
+
+Minha experiência inclui o desenvolvimento de interfaces de usuário (UI) e foco em otimizar a experiência do usuário (UX), além de colaborar em equipes para resolver bugs e implementar melhorias. Já publiquei alguns aplicativos na App Store, o que me permitiu entender melhor o ciclo completo de desenvolvimento e entrega de um app.
+
+Estou em busca de oportunidades que me permitam expandir ainda mais meu conhecimento, aprender com profissionais mais experientes e contribuir de maneira significativa para projetos que envolvam inovação e qualidade no desenvolvimento iOS.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+  
+  
+  <!--  <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SASS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TypeScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PostgreSQL</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  -->
+
+
+
+
+
+
+
+
+
+    <section id="projects">
+      <h1 class="title">Projetos</h1>
+      <div class="experience-details-container">
+        <!-- Primeira linha de projetos -->
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_1.png" alt="Tagarela" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Tagarela: Autismo</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('modal1')">Saiba Mais</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/br/app/tagarela-autismo/id6473281487'">Download</button>
+            </div>
+          </div>
+    
+          <!-- Modal para Tagarela -->
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal1')">&times;</span>
+              <h2>Detalhes do Tagarela: Autismo</h2>
+              <p>O aplicativo Tagarela foi desenvolvido para ajudar na comunicação de crianças com autismo. Ele utiliza recursos visuais e táteis para auxiliar na interação e aprendizagem..</p>
+            </div>
+          </div>
+    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_2.png" alt="Hinos" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Hinos Clubes Brasileiros</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('modal2')">Saiba Mais</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/br/app/hinos-clubes-brasileiros/id6478331061'">Download</button>
+            </div>
+          </div>
+    
+          <!-- Modal para Hinos -->
+          <div id="modal2" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal2')">&times;</span>
+              <h2>Detalhes do Hinos Clubes Brasileiros</h2>
+              <p>Com o aplicativo "Hinos Clubes Brasileiros", você pode acessar os hinos dos maiores times de futebol do Brasil. Descubra a história, a tradição e a paixão que cada hino carrega, com áudio de alta qualidade diretamente no seu dispositivo.</p>
+            </div>
+          </div>
+    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_3.png" alt="Bíblia" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Bíblia: Versículo do Dia</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('modal3')">Saiba Mais</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/br/app/b%C3%ADblia-vers%C3%ADculo-do-dia/id6474685617'">Download</button>
+            </div>
+          </div>
+    
+          <!-- Modal para Bíblia -->
+          <div id="modal3" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal3')">&times;</span>
+              <h2>Bíblia: Versículo do Dia</h2>
+              <p>Receba inspiração diária com versículos da Bíblia. O aplicativo "Bíblia: Versículo do Dia" traz mensagens diárias para fortalecer sua fé e ajudar no seu dia a dia..</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Segunda linha de projetos -->
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_4.png" alt="MAGG" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">MAGG</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('modal4')">Saiba Mais</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/br/app/magg/id6447768028'">Download</button>
+            </div>
+          </div>
+    
+          <!-- Modal para MAGG -->
+          <div id="modal4" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal4')">&times;</span>
+              <h2>Detalhes do MAGG</h2>
+              <p>A melhor ferramenta para Magic, nosso novo aplicativo de rastreamento de pontuação de vida! Seja você um profissional experiente ou um novato no jogo, este aplicativo facilitará o rastreamento de sua pontuação de vida
+
+                Este aplicativo é uma ferramenta para jogadores de Magic que desejam acompanhar sua pontuação de vida durante as partidas. Ele permite que os usuários insiram sua pontuação atual e a atualizem à medida que o jogo avança. Além disso, o aplicativo também pode ser personalizado para se adequar a diferentes formatos de jogo e incluir recursos adicionais, como cronômetros e contadores de mana.</p>
+            </div>
+          </div>
+    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_5.png" alt="ClipSaver" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">ClipSaver</h2>
+            <div class="btn-container">
+              <!-- Botão Saiba Mais que redireciona para outra página -->
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='clipsaver-details.html'"
+              >
+                Saiba Mais
+              </button>
+            </div>
+          </div>
+    
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/port_6.png" alt="Project Six" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Scanner Fácil</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="openModal('modal6')">Saiba Mais</button>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://apps.apple.com/br/app/scanner-f%C3%A1cil/id6450758851'">Download</button>
+            </div>
+          </div>
+    
+          
+          <!-- Modal para Project Six -->
+          <div id="modal6" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal('modal6')">&times;</span>
+              <h2>Detalhes do Scanner Fácil</h2>
+              <p>MTransforme seu smartphone em um scanner portátil de alta qualidade. Organize e compartilhe documentos de forma rápida e gratuita.
+
+
+                Digitalize com facilidade usando o ScannerFree! Transforme seu smartphone em um scanner portátil de alta qualidade. Organize e compartilhe documentos de forma rápida e gratuita.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- CSS para o modal -->
+    <style>
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    
+      .modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 500px;
+        border-radius: 15px; /* Bordas arredondadas */
+      }
+    
+      .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+    
+      .close:hover,
+      .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    </style>
+    
+    <!-- JavaScript para abrir e fechar os modais -->
+    <script>
+      function openModal(modalId) {
+        document.getElementById(modalId).style.display = 'block';
+      }
+    
+      function closeModal(modalId) {
+        document.getElementById(modalId).style.display = 'none';
+      }
+    
+      // Fechar o modal ao clicar fora dele
+      window.onclick = function (event) {
+        var modals = document.getElementsByClassName('modal');
+        for (var i = 0; i < modals.length; i++) {
+          if (event.target == modals[i]) {
+            modals[i].style.display = 'none';
+          }
+        }
+      };
+    </script>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <section id="contact">
+      <h1 class="title">Contatos</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">fernandes.leo@live.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/fernandesleo/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+         <!--   <li><a href="#experience">Experience</a></li> -->
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contatos</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

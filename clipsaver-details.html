@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipSaver - Detalhes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav id="desktop-nav">
+      <div class="logo">Leonardo</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Voltar para Home</a></li> <!-- Botão de voltar para Home -->
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Leo</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Voltar para Home</a></li> <!-- Botão de voltar para Home -->
+        </div>
+      </div>
+    </nav>
+    
+
+    <!-- Seção do projeto ClipSaver -->
+    <section id="project-details">
+      <div class="section__pic-container" style="text-align: center;">
+        <img src="./assets/port_5.png" alt="ClipSaver" class="project-img" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">ClipSaver</h1>
+        <p class="section__text__p2">
+          O ClipSaver é um aplicativo de produtividade que salva e organiza automaticamente todos os conteúdos copiados (Ctrl+C ou Cmd+C). Permite fácil acesso ao histórico de cliques e a reutilização eficiente de textos, links e outros conteúdos.
+        </p>
+        <p class="section__text__p2">
+          Ideal para quem trabalha com múltiplas tarefas, o ClipSaver oferece uma interface simples e intuitiva, facilitando a gestão do conteúdo copiado sem necessidade de colar imediatamente.
+        </p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://apps.apple.com/'"
+          >
+            Ver na AppStore
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de características -->
+    <section id="project-features">
+      <h1 class="title">Principais Características</h1>
+      <div class="features-container">
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Histórico de Cópia</h3>
+          <p>Armazena automaticamente todos os conteúdos copiados para acesso rápido.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Organização Intuitiva</h3>
+          <p>Classificação e agrupamento dos conteúdos por categorias.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Interface Amigável</h3>
+          <p>Design minimalista com fácil navegação e busca de itens.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Recuperação Rápida</h3>
+          <p>Acesse rapidamente qualquer item copiado a partir do histórico.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de FAQ -->
+    <section id="faq">
+      <h1 class="title">FAQ - Perguntas Frequentes</h1>
+      <div class="faq-container">
+        <div class="details-container">
+          <h3>Por que usar o ClipSaver?</h3>
+          <p>
+            O ClipSaver oferece uma maneira eficiente de gerenciar tudo o que você copia. Em vez de perder conteúdos copiados ao sobrescrever com novos, o aplicativo armazena cada cópia, permitindo que você recupere rapidamente o que precisar, a qualquer momento.
+          </p>
+        </div>
+        <div class="details-container">
+          <h3>O aplicativo é seguro? Ele armazena senhas?</h3>
+          <p>
+            Sim, o aplicativo é totalmente seguro! Ele é programado para ignorar automaticamente qualquer tentativa de copiar senhas ou informações sensíveis. Apenas o conteúdo regular que você copia (textos, links, etc.) é armazenado para reutilização posterior.
+          </p>
+        </div>
+        <div class="details-container">
+          <h3>Como o ClipSaver facilita o meu dia a dia?</h3>
+          <p>
+            Ao manter um histórico do que você copiou, você não precisa mais alternar constantemente entre documentos e aplicativos para copiar o mesmo conteúdo repetidamente. Isso economiza tempo e aumenta sua produtividade, permitindo acessar qualquer conteúdo copiado rapidamente.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    <section id="contact">
+      <h1 class="title">Contatos</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:fernandes.leo@live.com">fernandes.leo@live.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/fernandesleo/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#experience">Experiência</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Leonardo Fernandes. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
