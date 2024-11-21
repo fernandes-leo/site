@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Refreshly - Details</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <!-- Navegação -->
+    <nav id="desktop-nav">
+      <div class="logo">Refreshly</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="index.html">Back to Home</a></li> <!-- Botão de voltar para Home -->
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <div class="logo">Refresh</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="index.html" onclick="toggleMenu()">Back to Home</a></li> <!-- Botão de voltar para Home -->
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Seção do Refreshly -->
+    <section id="project-details">
+      <div class="section__pic-container" style="text-align: center;">
+        <img src="./assets/refresh.png" alt="Refreshly" class="project-img" />
+      </div>
+      <div class="section__text">
+        <h1 class="title">Refreshly</h1>
+        <p class="section__text__p2">
+          Refreshly is an app designed to help you maintain a healthy daily hydration routine. Track your water intake, set goals, and receive reminders to stay hydrated throughout the day.
+        </p>
+        <p class="section__text__p2">
+          With a user-friendly interface, Refreshly helps you establish and reach your hydration goals effortlessly, making healthy living part of your everyday routine.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção de características -->
+    <section id="project-features">
+      <h1 class="title">Main Features</h1>
+      <div class="features-container">
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Hydration Reminders</h3>
+          <p>Receive notifications throughout the day to ensure you stay hydrated.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Track Water Intake</h3>
+          <p>Easily log the amount of water you drink and monitor your progress over time.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Personalized Goals</h3>
+          <p>Set daily hydration goals based on your personal health needs.</p>
+        </div>
+        <div class="details-container">
+          <img src="./assets/checkmark.png" alt="Feature icon" class="icon" />
+          <h3>Daily Reports</h3>
+          <p>Get insights into your hydration habits and make improvements where needed.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Política de Privacidade -->
+    <section id="privacy-policy">
+      <h1 class="title">Privacy Policy</h1>
+      <div class="privacy-container">
+        <p>
+          Refreshly values your privacy. The app does not collect or share your personal information. All data related to your hydration habits is stored locally on your device, ensuring your privacy is maintained. No data is transmitted to third parties.
+        </p>
+        <p>
+          We use local notifications to remind you to drink water, and these notifications are managed entirely within your device.
+        </p>
+      </div>
+    </section>
+
+    <!-- Seção de FAQ -->
+    <section id="faq">
+      <h1 class="title">FAQ - Frequently Asked Questions</h1>
+      <div class="faq-container">
+        <div class="details-container">
+          <h3>How does Refreshly work?</h3>
+          <p>
+            Refreshly helps you track your water intake and sends reminders throughout the day to ensure you meet your hydration goals. Simply log the amount of water you drink, and the app will keep you on track.
+          </p>
+        </div>
+        <div class="details-container">
+          <h3>Is my data secure?</h3>
+          <p>
+            Yes, your data is completely secure. Refreshly stores all data locally on your device and does not collect or share any personal information.
+          </p>
+        </div>
+        <div class="details-container">
+          <h3>Can I customize my hydration goals?</h3>
+          <p>
+            Absolutely! You can personalize your hydration goals based on your weight, height, and daily activity level to ensure you get the right amount of hydration.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Contato -->
+    
+    <footer>
+      <nav>
+      </nav>
+      <p>Copyright &#169; 2023 Refreshly. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
